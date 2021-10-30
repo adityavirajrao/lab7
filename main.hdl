@@ -5,5 +5,8 @@ CHIP main  //Hack Alu
 
     Parts:
     
-    1
+    16mux (x= x , y = false ,s=zx, out = outx);
+    16mux (x= y , y = false ,s=zy, out = outy);
+
+    16xor (x= outx , )
 }
