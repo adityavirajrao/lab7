@@ -3,7 +3,7 @@ CHIP or16to1
     IN x[16];
     OUT y;
 
-    Parts:
+    PARTS:
     Or(a=x[0], b=x[1], out=a0);
     Or(a=x[2], b=x[3], out=a1);
     Or(a=x[4], b=x[5], out=a2);

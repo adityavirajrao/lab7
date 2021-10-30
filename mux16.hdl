@@ -6,7 +6,7 @@ CHIP mux16
     IN x[16], y[16],s;
     OUT out[16];
 
-    Parts:
+    PARTS:
 
     Not(in=s, out=s1);
 
@@ -62,3 +62,7 @@ CHIP mux16
     Or(a=p15, b=q15, out=out[15]);
     
 }
+
+
+
+
