@@ -3,26 +3,33 @@ CHIP main  //Hack Alu
     IN x[16] , y[16] , zx, nx ,zy ,ny , f , n ;
     OUT ans[16] , zr , ng ;
 
-    Parts:
+    PARTS:
     
+    // zero part
     mux16 (x= x , y = false ,s=zx, out = outx);
     mux16 (x= y , y = false ,s=zy, out = outy);
 
+    // negative part
     xor16 (x= outx , y= nx  ,out = p);
     xor16 (x= outy , y= ny  ,out = q);
 
-    add(x= p, y=q , as = 0 , s= outadd);
+    // add part
+    add (x= p, y=q , as = false , s= outadd);
 
+    // and part
     and16 (a= p , b = q, out  = outand);
 
+    //selecting output by f
     mux16 ( x= outand , y = outadd , s= f  , out = temp);
 
+    //last n0 bit to do complimenting
     xor16 ( x= temp , y = n , out = out);
 
-
+    // output zero bit
     or16to1 (x = out , y =zr );
 
-    And(a=out[15], b=out[15], out=ng);
+    //output negative bit
+    last ( a = out , b= ng);
     
 
     

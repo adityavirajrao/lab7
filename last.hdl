@@ -1,0 +1,10 @@
+CHIP last
+// gives last bit of 16 bit bus
+{
+    IN a[16];
+    OUT b;
+
+    PARTS:
+    And(a=a[15], b=a[15], out=b);
+    
+}
