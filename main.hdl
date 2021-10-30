@@ -1,0 +1,9 @@
+CHIP main  //Hack Alu
+{
+    IN x[16] , y[16] , zx, nx ,zy ,ny , f , n ;
+    OUT ans[16] , zr , ng ;
+
+    Parts:
+    
+    1
+}
