@@ -13,7 +13,7 @@ CHIP main  //Hack Alu
 
     add(x= p, y=q , as = 0 , s= outadd);
 
-    and16 (x= p , y = q, out  = outand);
+    and16 (a= p , b = q, out  = outand);
 
     mux16 ( x= outand , y = outadd , s= f  , out = temp);
 
