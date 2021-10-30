@@ -1,7 +1,7 @@
 CHIP add
 {
     IN x[16],y[16],as;
-    OUT s[16],overflow;
+    OUT s[16];
 
     PARTS:
 
@@ -72,5 +72,5 @@ CHIP add
     fun(x=x[15],y=y15,z=c15,out=s[15]);
     got(x=x[15],y=y15,z=c15,out=c16);
 
-    Xor(a=c16,b=as,out=overflow);       
+       
 }
