@@ -30,9 +30,4 @@ CHIP main  //Hack Alu
 
     //output negative bit
     last ( a = out , b= ng);
-    
-
-    
-
-
 }
