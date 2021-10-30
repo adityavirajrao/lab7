@@ -1,4 +1,5 @@
 CHIP got
+// sum of product of 2 bits taken at a time
 {
     IN x,y,z;
     OUT out;

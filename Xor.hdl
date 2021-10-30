@@ -1,4 +1,5 @@
 CHIP Xor
+// exclusive OR on 2 bits
 {
     IN a,b;
     OUT out;

@@ -1,4 +1,6 @@
-CHIP and16 {
+CHIP and16 
+// bitwise AND of 16bit buses
+{
     IN a[16], b[16];
     OUT out[16];
 

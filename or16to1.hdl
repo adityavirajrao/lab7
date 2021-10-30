@@ -1,4 +1,6 @@
 CHIP or16to1
+
+// gives OR of all 16 bits in a bus
 {
     IN x[16];
     OUT y;

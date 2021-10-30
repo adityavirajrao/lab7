@@ -1,4 +1,5 @@
 CHIP add
+// to add 16 bit buses
 {
     IN x[16],y[16],as;
     OUT s[16];
