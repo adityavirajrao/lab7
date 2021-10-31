@@ -23,7 +23,8 @@ CHIP or16to1
     Or(a=b0, b=b1, out=c0);
     Or(a=b2, b=b3, out=c1);
 
-    Or(a=c0, b=c1, out=y);
+    Or(a=c0, b=c1, out=t);
+    Not(in = t , out = y);
     
 
 
