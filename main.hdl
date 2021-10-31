@@ -30,6 +30,8 @@ CHIP main  //Hack Alu
 
     //output negative bit
     last ( a = out , b= ng);
+
+    and16 ( a= out , b = out  , out = ans);
     
 
     
